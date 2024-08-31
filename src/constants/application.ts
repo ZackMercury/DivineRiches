@@ -1,0 +1,3 @@
+export const APPLICATION_WIDTH = 1000;
+export const APPLICATION_HEIGHT = 750;
+

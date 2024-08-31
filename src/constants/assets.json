@@ -1,0 +1,18 @@
+{
+  "loading": [
+    "./logo.png"
+  ],
+  "game": [
+    "./assets.json",
+    "./frame.png",
+    "./reelmask.png",
+    "./bg.mp3",
+    "./sm_run.wav",
+    "./sm_start.wav",
+    "./sm_stop.wav",
+    "./music.png",
+    "./sound.png",
+    "./warning.png",
+    "./coin.png"
+  ]
+}
