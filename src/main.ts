@@ -10,6 +10,8 @@ import Tween from './util/static/Tween';
 import Settings from './util/static/Settings';
 import defaultSettings from './constants/defaultSettings';
 import System from './util/static/System';
+import FPSCounter from './util/singleton/FPSCounter';
+import Layout, { Side } from './util/static/Layout';
 
 (async () => {
   Settings.init(defaultSettings);
@@ -30,6 +32,12 @@ import System from './util/static/System';
 
   const app = document.getElementById("app")!;
   app.appendChild(application.canvas);
+
+  const fpsCounter = FPSCounter.getInstance(application.ticker);
+  fpsCounter.zIndex = 500;
+  Layout.offset(fpsCounter, Side.BOTTOM, 15);
+  Layout.offset(fpsCounter, Side.LEFT, 20);
+  application.stage.addChild(fpsCounter);
 
   // Initialize the Tween util
   Tween.init(application.ticker);
