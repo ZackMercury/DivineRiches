@@ -17,7 +17,7 @@ export default class FPSCounter extends Text {
       style: TextWorks.getNormalStyle("#ffffff", 16)
     });
 
-    ticker.add(this.update, this);
+    this.ticker.add(this.update, this);
   }
 
   public static getInstance(ticker: Ticker): FPSCounter {
