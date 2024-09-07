@@ -23,7 +23,7 @@ import Layout, { Side } from './util/static/Layout';
     width: APPLICATION_WIDTH,
     height: APPLICATION_HEIGHT,
     antialias: true,
-    powerPreference: "high-performance",
+    powerPreference: "low-power",
     background: "#071115",
     renderableGCActive: false,
   });
