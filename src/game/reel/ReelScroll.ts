@@ -5,7 +5,7 @@ import reelSymbols from "../../constants/reelSymbols";
 import Tween, { TweenType } from "../../util/static/Tween";
 import { Sound } from "@pixi/sound";
 import Settings from "../../util/static/Settings";
-import System from "../../util/static/System";
+// import System from "../../util/static/System";
 
 
 enum ReelState {
@@ -81,9 +81,9 @@ export default class ReelScroll extends Reel {
     this.blurFilter.quality = 2;
     this.blurFilter.strength = 0;
 
-    if (!System.checkMobile()) {
+    // if (!System.checkMobile()) {
       container.filters = [this.blurFilter];
-    }
+    // }
 
     ticker.add(this.update.bind(this));
 
